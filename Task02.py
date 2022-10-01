@@ -11,6 +11,7 @@ for i in range(N):
 print(numbers)
 
 composition = []
-for i in range(N // 2 + 1):
+import math
+for i in range(math.ceil(len(numbers) / 2)):
     composition.append(numbers[i] * numbers[N - i - 1])
 print(composition)
