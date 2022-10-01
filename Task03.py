@@ -12,7 +12,7 @@ print("Исходный список - " + str(numbers))
 
 fraction = []
 for i in range(N):
-    fraction.append(((numbers[i] * 100) % 100) / 100)
+    fraction.append(round(numbers[i] % 1, 2))
 print("Дробные части - " + str(fraction))
 fraction.sort()
 print("Упорядоченные дробные части - " + str(fraction))
